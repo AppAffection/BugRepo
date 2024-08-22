@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiHamburgerTest.MenuDetails"
-             Title=" Test App " BackgroundColor="Black" >
+             Title=" Test App " >
 
     <CollectionView x:Name="collectionView" SelectionMode="Single" VerticalOptions="FillAndExpand" >
         <CollectionView.ItemTemplate>
