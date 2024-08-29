@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTabbedPageText.MenuDetails"
+             Title=" Test App" >
+
+    <CollectionView x:Name="collectionView" SelectionMode="Single" VerticalOptions="FillAndExpand" >
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding IconSource}" />
+                    <StackLayout Grid.Column="1" Orientation="Vertical">
+                        <Label TextColor="White" FontSize="18" Text="{Binding Title}" VerticalOptions="Center" Margin="2" />
+                        <Label TextColor="White" FontSize="12" Text="{Binding DetailText}" VerticalOptions="Center" Margin="2" />
+                    </StackLayout>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
